@@ -1,0 +1,18 @@
+{
+  "name": "liverpool-pug",
+  "version": "1.0.0",
+  "description": "\"maquetacion liverpool\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"pug\""
+  },
+  "keywords": [
+    "\"pug\""
+  ],
+  "author": "Clauss Frank",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0"
+  }
+}
