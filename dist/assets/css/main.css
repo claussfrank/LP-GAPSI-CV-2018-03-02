@@ -1,0 +1,51 @@
+.color-white{
+	color: white;
+}
+.color-pink{
+	color: #E4428C;
+}
+.padL-10{
+	padding-left: 10px;
+}
+.padR-10{
+	padding-right: 10px;
+}
+.padT-10{
+	padding-top: 10px;
+}
+.padB-10{
+	padding-bottom: 10px;
+}
+/*
+//======================= HEADER============
+*/
+
+.section-pink{
+	background-color: #E4428C;
+	padding: 2% 5px;;
+}
+.section-white{
+	font-size: 14px;
+	padding: 3px 5px;
+	text-align: left;
+}
+.section-white > div > a{
+	padding: 10px 5px;
+}
+select{
+	background-color:#E4428C;
+	color: white;
+	border: 0px;
+	font-size: 14px;
+}
+.icon-bag{
+	color: white;
+	font-size: 3em;
+}
+
+nav > ol > li > a{
+	color: black;
+}
+nav > ol > .active{
+	color: #E4428C !important;
+}
