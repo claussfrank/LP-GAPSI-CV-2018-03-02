@@ -3,6 +3,7 @@
   <head>
     <meta charset="uft-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--Bootstrap css-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -62,21 +63,25 @@
             <p class="text-codigo col-md-12">Código de Producto:10577728444</p>
             <div class="col-md-12 color-yellow"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
             <p class="text-codigo col-md-12"><s>$799<sup>00</sup></s></p>
-            <p class="price col-md-12">$479<sup>20</sup>
-              <select>
-                <option selected>Moneda </option>
-                <option value="1">Pesos</option>
-                <option value="2">Dolares</option>
-              </select>
-            </p>
+            <p id="price" class="price col-md-6">$479<sup>20</sup></p>
+            <div class="dropdown show col-md-6"><a href="#" role="button" id="dropdownPrecio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-secondary dropdown-toggle">Moneda</a>
+              <div aria-labelledby="dropdownMenuLink" class="dropdown-menu"><a id="Pesos" class="dropdown-item">Pesos</a><a id="Dolars" class="dropdown-item">Dollars</a></div>
+            </div>
             <p class="col-md-12">COLOR<span id="color-zapato"> VINO</span></p>
             <div id="vino" class="vino col-md-6">
               <div class="row">
-                <div class="col-md-4"><img src="assets/img/boton-vino.png" width="100%" height="100%"></div>
-                <div class="col-md-4"><img src="assets/img/boton-negro.png" width="100%" height="100%"></div>
+                <div class="col-md-4">
+                  <button id="btn-vino"></button>
+                </div>
+                <div class="col-md-4">
+                  <button id="btn-negro"></button>
+                </div>
               </div>
             </div>
-            <p class="col-md-12">SELECCIONA TALLA</p>
+            <p class="col-md-7">SELECCIONA TALLA</p>
+            <div class="col-md-5 padB-10 dropdown show col-md-6"><a href="#" role="button" id="dropdownTalla" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-secondary dropdown-toggle">Talla</a>
+              <div aria-labelledby="dropdownMenuLink" class="dropdown-menu"><a id="btn-cent" class="dropdown-item">Centimetros</a><a id="btn-pulg" class="dropdown-item">Pulgadas</a></div>
+            </div>
             <div id="centimetros" class="col-md-12">
               <div class="row">
                 <p class="side col-md-3">25cm</p>
@@ -138,6 +143,176 @@
           </div>
         </div>
       </section>
+      <!--DescriptionAndPromotions-->
+      <section class="container">
+        <div id="accordion" class="row">
+          <div class="card col-md-12">
+            <div id="headingOne" class="card-header-white">
+              <h5 class="mb-0">
+                <button data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> 
+                  <h6>DESCRIPCIÓN     <span><i class="fas fa-angle-down"></i></span></h6>
+                </button>
+              </h5>
+            </div>
+          </div>
+          <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion" class="collapse show">
+            <div class="card-body col-md-12">
+              <h6 class="col-md-12">Zapato drive JBE vino</h6>
+              <p class="col-md-12">La  leyenda del  mundo textil que dio vida a un  universo de posinilidades en la elaboración de ropa para caballero. JBE es calidad y diseño atemporal, es por eso el emblema de nuestra empresa. Zapato listo de  punta redonda, pespuntes a detalle, ajuste perfecto cuyo diseño proporciona comodidad para cualquier ocación.</p>
+            </div>
+          </div>
+          <div class="card col-md-12">
+            <div id="headingTwo" class="card-header-white">
+              <h5 class="mb-0">
+                <button data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne"> 
+                  <h6>CARACTERÍSTICAS     <span><i class="fas fa-angle-down"></i></span></h6>
+                </button>
+              </h5>
+            </div>
+          </div>
+          <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion" class="collapse show">
+            <div class="card-body row">
+              <div class="col-md-3">
+                <div class="row">
+                  <p class="col-md-12 cell-gray">Marca</p>
+                </div>
+                <div class="row">
+                  <p class="col-md-12 cell-gray">Modelo</p>
+                </div>
+                <div class="row">
+                  <p class="col-md-12 cell-gray">Tipo De Zapato</p>
+                </div>
+                <div class="row">
+                  <p class="col-md-12 cell-gray">Material</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="row">
+                  <p class="col-md-12 cell-white">JBE</p>
+                </div>
+                <div class="row">
+                  <p class="col-md-12 cell-white">ZG5263-5</p>
+                </div>
+                <div class="row">
+                  <p class="col-md-12 cell-white">Driver</p>
+                </div>
+                <div class="row">
+                  <p class="col-md-12 cell-white">Sintético</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="row">
+                  <p class="col-md-12 cell-gray">Material Suela</p>
+                </div>
+                <div class="row">
+                  <p class="col-md-12 cell-gray">Fijación</p>
+                </div>
+                <div class="row">
+                  <p class="col-md-12 cell-gray">Instrucciones de Cuidado y Limpieza</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="row">
+                  <p class="col-md-12 cell-white">Sintético</p>
+                </div>
+                <div class="row">
+                  <p class="col-md-12 cell-white">1 tiempo</p>
+                </div>
+                <div class="row">
+                  <p class="col-md-12 cell-white">Limpia con un paño húmedo o lavar a mano con un cepillo de cerdas suaves</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card col-md-12">
+            <div id="headingThree" class="card-header-white">
+              <h5 class="mb-0">
+                <button data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"> 
+                  <h6>OFERTAS ESPECIALES Y PROMOCIONES     <span><i class="fas fa-angle-down"></i></span></h6>
+                </button>
+              </h5>
+            </div>
+          </div>
+          <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion" class="collapse show">
+            <div class="card-body row">
+              <div class="col-md-6">
+                <div class="row">
+                  <h6 class="col-md-12">Tarjetas Liverpool</h6>
+                </div>
+                <div class="row">
+                  <ul>
+                    <li>20% de descuento-presupuesto liverpool/fabricas.</li>
+                    <li>presupuesto/fabricas</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <h6 class="col-md-12">Tarjetas Liverpool</h6>
+                </div>
+                <div class="row">
+                  <ul>
+                    <li>20% de descuento.</li>
+                    <li>20% de descuento - cuenta corriente externas.</li>
+                    <li>cuenta corriente externas</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--SimilarProducts-->
+      <!--Footer-->
+      <footer>
+        <div class="row linea-bot">
+          <div class="col-md-3">
+            <h6 class="footer-title">SOPORTE AL CLIENTE</h6>
+            <p class="text-codigo">Facturación</p>
+            <p class="text-codigo">Mis Pedidos</p>
+            <p class="text-codigo">Ayuda al cliente</p>
+            <p class="text-codigo">Preguntas frecuentes</p>
+            <p class="text-codigo">Click&Collect</p>
+            <p class="text-codigo">Cambios,devoluciones y cancelaciones</p>
+            <p class="text-codigo">Soporte Técnico</p>
+          </div>
+          <div class="col-md-3">
+            <h6 class="footer-title">SERVICIOS LIVERPOOL</h6>
+            <p class="text-codigo">Crédito Liverpool</p>
+            <p class="text-codigo">Tiempo aire</p>
+            <p class="text-codigo">Mesa de regalos</p>
+            <p class="text-codigo">Seguros Liverpool</p>
+            <p class="text-codigo">Concursos y promociones</p>
+            <p class="text-codigo">Formas de pago</p>
+            <p class="text-codigo">Viajes</p>
+          </div>
+          <div class="col-md-3">
+            <h6 class="footer-title">ACERCA DE LIVERPOOL</h6>
+            <p class="text-codigo">Acerca de nosotros</p>
+            <p class="text-codigo">Bolsa de trabajo</p>
+            <p class="text-codigo">Relación con inventarios</p>
+            <p class="text-codigo">Buen Fin 20217</p>
+            <h6 class="footer-title">HORARIO DE TIENDA</h6>
+            <p class="text-codigo">Lunes a Domingo de 11:00am a 9:00pm</p>
+            <p class="text-codigo color-pink">Ubica tu tienda más cercana</p>
+          </div>
+          <div class="col-md-3">
+            <h6 class="footer-title">VENTAS POR TELÉFONO</h6>
+            <p class="text-codigo">5262-9999/01 800 713 5555</p>
+            <p class="text-codigo">Desde tu celular *7171</p>
+            <h6 class="footer-title">COMENTARIOS Y SUGERENCIAS</h6>
+            <p class="text-codigo">atencion@liverpool.com.mx</p>
+            <h6 class="footer-title">SUSCRÍBETE</h6><a class="btn-suscribete">Suscribete a nuestro boletín</a>
+            <h6 class="footer-title mgT-10">SíGUENOS<span><i class="fab fa-instagram icon-footer"></i><i class="fab fa-facebook-f icon-footer"></i><i class="fab fa-twitter icon-footer"></i></span></h6>
+          </div>
+        </div>
+        <hr>
+        <div class="row text-center">
+          <p class="text-codigo col-md-12">*Precio en rojo incluye descuento más alto pagando de contado.Las promociones de www.liverpool.com.mx pueden diferir de las promociones publicadas en tienda. El formato de los precios puede verse afectados por la configuaracion y diferencia de navegador.</p>
+          <p class="text-codigo col-md-12">*Las promociones de vinos y licores no aplican para los estados de: Sonora, Chihuahua, Yucatan y Baja California.</p>
+          <div class="col-md-12"><a class="footer-title">Términos y Condiciones |</a><a class="footer-title">Aviso de privacidad |</a><a class="footer-title padB-10">Todos los derechos reservados D.R.®			</a></div>
+        </div>
+      </footer>
     </div>
     <!--JQuery and Bootstrap JS-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

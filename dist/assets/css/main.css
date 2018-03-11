@@ -22,6 +22,9 @@
 .padB-10{
 	padding-bottom: 10px;
 }
+.mgT-0{
+	margin-top: 0px;
+}
 .mgT-10{
 	margin-top: 10px;
 }
@@ -97,4 +100,65 @@ button{
 }
 #pulgadas{
 	display: none;
+}
+#btn-vino{
+	background-image: url(../img/boton-vino.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+}
+#btn-negro{
+	background-image: url(../img/boton-negro.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+}
+/*
+//======================= Description and Promotions============
+*/
+.card-header-white{
+	border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+#accordion > .card {
+	border: 0px;
+}
+#accordion > .card > .card-header-white > h5  > button {
+	background-color: white;
+	color: black;
+}
+
+.cell-gray{
+	background-color: lightgrey;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 5px;
+	margin: 10px;
+}
+.cell-white{
+	background-color:white;
+	font-size: 12px;
+	font-weight: 400;
+	padding: 5px;
+	margin: 10px;
+}
+.cell-white > p{
+	margin: 0px;
+}
+.cell-gray > p{
+	margin: 0px;
+}
+/*
+//======================= Footer============
+*/
+.icon-footer{
+	font-size:1em;
+	padding: 1.5px 2px;
+}
+.btn-suscribete{
+	padding: 5px;
+	margin: 3px;
+	border: 1px solid rgba(0,0,0,.125);
 }
