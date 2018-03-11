@@ -7,6 +7,8 @@
     <!--Bootstrap css-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
   </head>
   <body>
     <div class="container-fluid">
@@ -62,8 +64,10 @@
             <h5 class="col-md-12">Zapato drive JBE vino</h5>
             <p class="text-codigo col-md-12">Código de Producto:10577728444</p>
             <div class="col-md-12 color-yellow"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
-            <p class="text-codigo col-md-12"><s>$799<sup>00</sup></s></p>
-            <p id="price" class="price col-md-6">$479<sup>20</sup></p>
+            <div id="cont-price">
+              <p class="text-codigo col-md-12"><s>$799<sup>00</sup></s></p>
+              <p id="price" class="price col-md-6">$479<sup>20</sup></p>
+            </div>
             <div class="dropdown show col-md-6"><a href="#" role="button" id="dropdownPrecio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-secondary dropdown-toggle">Moneda</a>
               <div aria-labelledby="dropdownMenuLink" class="dropdown-menu"><a id="Pesos" class="dropdown-item">Pesos</a><a id="Dolars" class="dropdown-item">Dollars</a></div>
             </div>
@@ -263,6 +267,61 @@
         </div>
       </section>
       <!--SimilarProducts-->
+      <section>
+        <h5>ARTICULOS SIMILARES</h5>
+        <div class="slider responsive">
+          <div class="item-slide"><img src="assets/img/carrusel/zapato-1.jpg" alt="liverpool">
+            <h6>Zapato mocasín JBE piel negro</h6>
+            <p class="text-codigo col-md-12"><s>$699.00</s></p>
+            <p class="price col-md-6">$594.15</p>
+          </div>
+          <div class="item-slide"><img src="assets/img/carrusel/zapato-2.jpg" alt="liverpool">
+            <h6>Zapato mocasín JBE piel negro</h6>
+            <p class="text-codigo col-md-12"><s>$699.00</s></p>
+            <p class="price col-md-6">$594.15</p>
+          </div>
+          <div class="item-slide"><img src="assets/img/carrusel/zapato-3.jpg" alt="liverpool">
+            <h6>Zapato mocasín JBE piel negro</h6>
+            <p class="text-codigo col-md-12"><s>$699.00</s></p>
+            <p class="price col-md-6">$594.15</p>
+          </div>
+          <div class="item-slide"><img src="assets/img/carrusel/zapato-4.jpg" alt="liverpool">
+            <h6>Zapato mocasín JBE piel negro</h6>
+            <p class="text-codigo col-md-12"><s>$699.00</s></p>
+            <p class="price col-md-6">$594.15</p>
+          </div>
+          <div class="item-slide"><img src="assets/img/carrusel/zapato-5.jpg" alt="liverpool">
+            <h6>Zapato mocasín JBE piel negro</h6>
+            <p class="text-codigo col-md-12"><s>$699.00</s></p>
+            <p class="price col-md-6">$594.15</p>
+          </div>
+          <div class="item-slide"><img src="assets/img/carrusel/zapato-6.jpg" alt="liverpool">
+            <h6>Zapato mocasín JBE piel negro</h6>
+            <p class="text-codigo col-md-12"><s>$699.00</s></p>
+            <p class="price col-md-6">$594.15</p>
+          </div>
+          <div class="item-slide"><img src="assets/img/carrusel/zapato-7.jpg" alt="liverpool">
+            <h6>Zapato mocasín JBE piel negro</h6>
+            <p class="text-codigo col-md-12"><s>$699.00</s></p>
+            <p class="price col-md-6">$594.15</p>
+          </div>
+          <div class="item-slide"><img src="assets/img/carrusel/zapato-8.jpg" alt="liverpool">
+            <h6>Zapato mocasín JBE piel negro</h6>
+            <p class="text-codigo col-md-12"><s>$699.00</s></p>
+            <p class="price col-md-6">$594.15</p>
+          </div>
+          <div class="item-slide"><img src="assets/img/carrusel/zapato-9.jpg" alt="liverpool">
+            <h6>Zapato mocasín JBE piel negro</h6>
+            <p class="text-codigo col-md-12"><s>$699.00</s></p>
+            <p class="price col-md-6">$594.15</p>
+          </div>
+          <div class="item-slide"><img src="assets/img/carrusel/zapato-10.jpg" alt="liverpool">
+            <h6>Zapato mocasín JBE piel negro</h6>
+            <p class="text-codigo col-md-12"><s>$699.00</s></p>
+            <p class="price col-md-6">$594.15	</p>
+          </div>
+        </div>
+      </section>
       <!--Footer-->
       <footer>
         <div class="row linea-bot">
@@ -319,6 +378,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/slick.js" type="text/javascript"></script>
+    <script src="assets/js/main.js" type="text/javascript"></script>
+    <script src="assets/js/carrusel.js" type="text/javascript"></script>
   </body>
 </html>
