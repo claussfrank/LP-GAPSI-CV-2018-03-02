@@ -10,6 +10,93 @@ html(lang="em")
 		.container-fluid
 			//Header
 			include parths/_Header.jade
+			//GeneralSummary
+			section(class="row")
+				div(class="col-md-1")
+					.row
+						img(src="assets/img/zapato-up.jpg" width="90%" height="90%" alt="liverpool")
+					.row
+						img(src="assets/img/zapato-front-02.jpg" width="90%" height="90%" alt="liverpool")
+					.row
+						img(src="assets/img/zapato-front.jpg" width="90%" height="90%" alt="liverpool")
+					.row
+						img(src="assets/img/zapato-back.jpg" width="90%" height="90%" alt="liverpool")
+				div(class="col-md-4")
+					div(class="row mx-auto")
+						img(src="assets/img/zapato-front-02.jpg" width="90%" height="90%" alt="liverpool")
+				div(class="col-md-4")
+					div.row
+						h5(class="col-md-12") Zapato drive JBE vino
+						p(class="text-codigo col-md-12") Código de Producto:10577728444
+						div(class="col-md-12 color-yellow")
+							i(class="far fa-star")
+							i(class="far fa-star")
+							i(class="far fa-star")
+							i(class="far fa-star")
+							i(class="far fa-star")
+						p(class="text-codigo col-md-12") <s>$799<sup>00</sup></s>
+						p(class="price col-md-12") $479<sup>20</sup>
+							select()
+								option(selected) Moneda 
+								option(value="1") Pesos
+								option(value="2") Dolares
+						p(class="col-md-12") COLOR
+							span(id="color-zapato")  VINO
+						div(id="vino" class="vino col-md-6")
+							.row
+								div(class="col-md-4")
+									img(src="assets/img/boton-vino.png" width="100%" height="100%")
+								div(class="col-md-4")
+									img(src="assets/img/boton-negro.png" width="100%" height="100%")
+						p(class="col-md-12") SELECCIONA TALLA
+						div(class="col-md-12" id="centimetros")
+							.row
+								p(class="side col-md-3") 25cm
+								p(class="side col-md-3") 25.5cm
+								p(class="side col-md-3") 26cm
+								p(class="side col-md-3") 26.5cm
+							.row
+								p(class="side col-md-3") 27cm
+								p(class="side col-md-3") 27.5cm
+								p(class="side col-md-3") 28cm
+								p(class="side col-md-3") 28.5cm
+							.row
+								p(class="side col-md-3") 29cm
+								p(class="side col-md-3") 29.5cm
+								p(class="side col-md-3") 30cm
+						div(class="col-md-12" id="pulgadas")
+							.row
+								p(class="side col-md-3") 8 USA
+								p(class="side col-md-3") 8.5 USA
+								p(class="side col-md-3") 9 USA
+								p(class="side col-md-3") 9.5 USA
+							.row
+								p(class="side col-md-3") 10 USA
+								p(class="side col-md-3") 10.5 USA
+								p(class="side col-md-3") 11 USA
+								p(class="side col-md-3") 11.5 USA
+							.row
+								p(class="side col-md-3") 12 USA
+								p(class="side col-md-3") 12.5 USA
+								p(class="side col-md-3") 12 USA		
+						div(class="col-md-12") 
+							p(class="") DESCRIPCIÓN
+							p(class="text-codigo") La leyenda de mundo textil que  dio vida a un universo de posibilidades en la elaboración de ropa para caballero. JBE es calidad u diseño  atemporal, es por  eso el emblema de nuestra empresa. Zapato listo de punta redonda, despuntes a detalle, ajuste perfecto cuyo diseño proporciona comodidad para cualquier ocasión.
+							p(class="text-codigo color-pink padT-50") Más información 
+								span
+									i(class="fas fa-long-arrow-alt-down")
+				div(class="col-md-3")
+					div(class="row entrega")
+						label(class="text-codigo") Fecha estimada de entrega
+						input(type="date" id="myDate" value="2018-03-10")
+						div(class="col-md-12") 
+							div(class="row mgT-10")
+								p(class="col-md-7") CANTIDAD
+								input(type="number" name="quantity" min="0" max="10" step="1" value="0" class="col-md-3")
+							div(class="row")
+								button Agregar a mi bolsa   
+									span
+										i(class="fas fa-angle-right")
 		//JQuery and Bootstrap JS
 		script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")

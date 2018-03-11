@@ -4,6 +4,9 @@
 .color-pink{
 	color: #E4428C;
 }
+.color-yellow{
+	color: yellow;
+}
 .padL-10{
 	padding-left: 10px;
 }
@@ -13,8 +16,14 @@
 .padT-10{
 	padding-top: 10px;
 }
+.padT-50{
+	padding-top: 50px;
+}
 .padB-10{
 	padding-bottom: 10px;
+}
+.mgT-10{
+	margin-top: 10px;
 }
 /*
 //======================= HEADER============
@@ -48,4 +57,44 @@ nav > ol > li > a{
 }
 nav > ol > .active{
 	color: #E4428C !important;
+}
+/*
+//======================= GENERAL SUMMARY============
+*/
+.text-codigo{
+	font-size: 12px;
+	margin-bottom: 0px !important;
+}
+.price{
+	color: red;
+	font-weight: 600;
+	font-size: 1.5em;
+	margin-bottom: 0px;
+}
+#color-zapato{
+	font-weight: 700;
+}
+.side{
+	font-size: 10px;
+	border: .2px solid black;
+	margin-bottom: 0px;
+	padding: 5px 2px;
+	text-align: center;
+}
+.entrega{
+	border: .2px solid black;
+	padding: 20px;
+}
+button{
+	color: white;
+	background-color: #E4428C;
+	border: 0px;
+	padding: 7px;
+	margin: 10px;
+}
+#centimetros{
+	display: block;
+}
+#pulgadas{
+	display: none;
 }
